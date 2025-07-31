@@ -22,8 +22,9 @@ The following steps demonstrates how to achieve this:
    echo "Database copied to /tmp/."
    ```
    This step copies the Kraken2 database to the `/tmp/` directory, which is typically a temporary filesystem on a cluster node.
+   **On dardel all prebuilt databases are here **/cfs/klemming/pdc/software/dardel/sw-uppmax/data/Kraken2_data/prebuilt/** 
 
-3. **Loop Over Fastq Files and run Kraken2 with Memory Mapping**:
+4. **Loop Over Fastq Files and run Kraken2 with Memory Mapping**:
    ```bash
    for input_file in /path/to/your/files/*.fasta.gz; do
    kraken2 --db /tmp/k2_nt_20240530 \
