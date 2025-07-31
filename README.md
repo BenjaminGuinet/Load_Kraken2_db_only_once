@@ -61,8 +61,8 @@ for input_file in *.fasta.gz; do
           \${input_file}
 
   # Compress the output files
-  pigz -p 128 "\${input_file%.fasta.gz}.kraken2_nt.out"
-  pigz -p 128 "\${input_file%.fasta.gz}_unclass_nt.fq"
+  pigz -p 12 "\${input_file%.fasta.gz}.kraken2_nt.out"
+  pigz -p 12 "\${input_file%.fasta.gz}_unclass_nt.fq"
 
   # End timing
   time_end=$(date +%s)
