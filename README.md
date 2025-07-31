@@ -18,7 +18,7 @@ The following steps demonstrates how to achieve this:
 2. **Copy Database to Temporary Directory**:
    ```bash
    echo "Copying database to /tmp/..."
-   cp -r $KRAKEN2_DB/k2_nt_20240530 /tmp/
+   cp -r path/to/Krakendb/k2_nt_20240530 /tmp/
    echo "Database copied to /tmp/."
    ```
    This step copies the Kraken2 database to the `/tmp/` directory, which is typically a temporary filesystem on a cluster node.
