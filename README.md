@@ -25,7 +25,7 @@ The following steps demonstrates how to achieve this:
 
 3. **Loop Over Fastq Files and run Kraken2 with Memory Mapping**:
    ```bash
-   for input_file in *.fasta.gz; do
+   for input_file in /path/to/your/files/*.fasta.gz; do
    kraken2 --db /tmp/k2_nt_20240530 \
            --unclassified-out "${input_file%.fasta.gz}_unclass_nt.fq" \
            --report-minimizer-data \
