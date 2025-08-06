@@ -3,11 +3,11 @@
 This guide explains how to use Kraken2 with memory mapping to load the database only once and then loop over the fastq files to classify them. 
 This approach is particularly useful on a cluster where you can first copy the full database to a temporary node and then specify the location of the database to Kraken2.
 
-Example of time spent : 
-For 466 of contig files (Tot size : 2.GB)
-Max time / file = 11 sec
-Min time /file = 215 sec
-Total time spent to classify : 6.4 hours
+Example of time spent of contigs against NT database : 
+- For 466 of contig files (Tot size : 2.GB)
+- Max time / file = 11 sec
+- Min time /file = 215 sec
+- Total time spent to classify : 6.4 hours
 
 
 ## Script Explanation
