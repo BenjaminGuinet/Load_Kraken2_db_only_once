@@ -82,3 +82,13 @@ for input_file in *.fasta.gz; do
   echo ""
 done
 ```
+
+**Note :** For Dardel users, instead of the ```/tmp/``` folder you may have to cp to your scratch folder which should be found:
+```/cfs/klemming/scratch/{first letter of username}/{username}``` in case you don't have enough space in tmp. 
+
+
+
+
+
+
+
